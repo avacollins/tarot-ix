@@ -1,0 +1,17 @@
+{
+  "name": "tarot-ix",
+  "version": "1.0.0",
+  "description": "Same old new thing",
+  "repository": "git@github.com:avacollins/tarot-ix.git",
+  "author": "Ava Collins <info@avacollins.dev>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "./apps/*",
+    "./packages/*"
+  ],
+  "resolutions": {
+    "react": "18.3.1",
+    "react-native": "0.76.7"
+  }
+}
