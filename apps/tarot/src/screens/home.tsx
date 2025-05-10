@@ -8,7 +8,6 @@ const { height: screenHeight } = Dimensions.get('window');
 const height = screenHeight;
 const width = screenHeight * 0.707;
 
-
 const styles = StyleSheet.create({
     container: {
         flex: 1

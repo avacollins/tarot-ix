@@ -2,7 +2,7 @@ import { ThemeProvider, createTheme } from '@rneui/themed';
 import React from 'react';
 import { Colors as colors } from 'ui';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import HomeScreen from './screens/HomeScreen';
+import AppEntry from './navigation/app-entry';
 
 const theme = createTheme({
     lightColors: {
@@ -30,7 +30,7 @@ export default function App() {
   return (
       <ThemeProvider theme={theme}>
       <SafeAreaProvider>
-       <HomeScreen/>
+       <AppEntry />
         </SafeAreaProvider>
     </ThemeProvider>
   );
