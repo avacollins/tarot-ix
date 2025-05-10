@@ -8,6 +8,7 @@
   "scripts": {
     "build:types": "tsc -b",
     "ios": "yarn workspace tarot ios",
+    "npxios": "yarn workspace tarot npxios",
     "lint": "tsc --noEmit && eslint . --ext tsx,json --quiet --fix"
   },
   "workspaces": [
