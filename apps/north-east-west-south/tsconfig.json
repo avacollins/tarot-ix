@@ -1,10 +1,13 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "strict": true
+    "baseUrl": ".",
+    "strict": true,
+    "composite": true,
+    "declaration": true
   },
   "include": [
-    "src/**/*",
+    "src/",
     "index.ts"
   ],
   "exclude": []

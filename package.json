@@ -4,10 +4,9 @@
   "description": "Same old new thing",
   "repository": "git@github.com:avacollins/tarot-ix.git",
   "author": "Ava Collins <info@avacollins.dev>",
-  "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "tsc --noEmit && eslint . --ext tsx,json --quiet"
+    "lint": "tsc --noEmit && eslint . --ext tsx,json --quiet --fix"
   },
   "workspaces": [
     "./apps/*",
@@ -25,6 +24,15 @@
     "typescript": "~5.8.3"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.26.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
     "typescript": "^5.8.3"
   }
 }

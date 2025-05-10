@@ -1,8 +1,11 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
+    "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
     "isolatedModules": true,
@@ -16,11 +19,20 @@
     "strictNullChecks": true,
     "paths": {
       "@tarot-ix/*": [
-        "./packages/*"
+        "packages/*"
       ]
     }
   },
+  "references": [
+    {
+      "path": "apps/north-east-west-south"
+    },
+    {
+      "path": "apps/tarot"
+    }
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "*.mjs"
   ]
 }
