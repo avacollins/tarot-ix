@@ -18,19 +18,11 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "paths": {
-      "@tarot-ix/*": [
-        "packages/*"
+      "ui/*": [
+        "packages/ui/*"
       ]
     }
   },
-  "references": [
-    {
-      "path": "apps/north-east-west-south"
-    },
-    {
-      "path": "apps/tarot"
-    }
-  ],
   "exclude": [
     "node_modules",
     "*.mjs"

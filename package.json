@@ -6,11 +6,13 @@
   "author": "Ava Collins <info@avacollins.dev>",
   "private": true,
   "scripts": {
+    "build:types": "tsc -b",
+    "ios": "yarn workspace tarot ios",
     "lint": "tsc --noEmit && eslint . --ext tsx,json --quiet --fix"
   },
   "workspaces": [
-    "./apps/*",
-    "./packages/*"
+    "apps/*",
+    "packages/*"
   ],
   "resolutions": {
     "expo": "~53.0.9",

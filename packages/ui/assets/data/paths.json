@@ -1,0 +1,73 @@
+{
+	"Aces": {
+		"description": "Aces represent potential energy available to you. If you make choices that allow you to take advantage of them they always bring positive aspects into your life.",
+		"coins": "potential material gain",
+		"cups": "potential emotional fulfillment",
+		"swords": "potential success from action",
+		"wands": "potential for growth",
+		"keywords": [
+			"action",
+			"beginnings",
+			"clean slate",
+			"energy",
+			"initiation",
+			"opportunity",
+			"potential"
+		]
+	},
+	"chokmah": {
+		"description": "Duality and the points of contact between two forces adds dimension and complexity to matters at hand.",
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"binah": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"chesed": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"geburah": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"tipareth": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"netzach": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"hod": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"yesod": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	},
+	"malkuth": {
+		"coins": "",
+		"cups": "",
+		"swords": "",
+		"wands": ""
+	}
+}

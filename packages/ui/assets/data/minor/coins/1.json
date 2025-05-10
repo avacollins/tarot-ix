@@ -1,0 +1,142 @@
+{
+	"Ace of Coins": {
+		"upright": {
+			"major": {},
+			"minor": {
+				"coins": {
+					"ace": null,
+					"two": "Use your resources to get things done.",
+					"three": "A willingness to learn and collaborate will increase your chances of a material success.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				},
+				"cups": {
+					"ace": "A new beginning for love and happiness, with long term potential for a secure future.",
+					"two": "A partnership with material potential.",
+					"three": "Social networks can be leveraged for material gains.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				},
+				"swords": {
+					"ace": "Stay focused and you will win the prize.",
+					"two": "Acting ethically in this matter will benefit you physically.",
+					"three": "Upheaval and painful emotions can inspire a path toward stability and success.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				},
+				"wands": {
+					"ace": "New ideas can bring new sources of wealth.",
+					"two": "Productive working relationships will propel your material success.",
+					"three": "Initial success in matters so far indicate even greater chances of long term sustainability.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				}
+			}
+		},
+		"reversed": {
+			"major": {},
+			"minor": {
+				"coins": {
+					"ace": null,
+					"two": "Financial stability requires clear priorities and boundaries to be respected.",
+					"three": "Poor work ethics or inability to work with others put material success at risk.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				},
+				"cups": {
+					"ace": "An empty feeling from despite material abundance.",
+					"two": "A dissolution of union with some material gains.",
+					"three": "The cost of being outcast socially can be repaid with material success.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				},
+				"swords": {
+					"ace": "Doubts and insecurities block the path towards stability.",
+					"two": "Being dishonest with others doesn't preclude you from material success.",
+					"three": "Denial and misdirections only cost you in the end, look for ways to heal your wounds rather than hide them.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				},
+				"wands": {
+					"ace": "Don't let false starts and failed attempts dissuade you.",
+					"two": "Troubled relationships can risk everything you are working for.",
+					"three": "Acting with conceit or haste will have a material price.",
+					"four": "",
+					"five": "",
+					"six": "",
+					"seven": "",
+					"eight": "",
+					"nine": "",
+					"ten": "",
+					"page": "",
+					"knight": "",
+					"queen": "",
+					"king": ""
+				}
+			}
+		}
+	}
+}

@@ -126,7 +126,7 @@ export default defineConfig([
             }],
 
             'no-native-reassign': 2,
-            'no-nested-ternary': 2,
+            'no-nested-ternary': 1,
             'no-new': 2,
             'no-new-func': 2,
             'no-new-object': 2,

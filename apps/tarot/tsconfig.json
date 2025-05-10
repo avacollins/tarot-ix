@@ -2,12 +2,17 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "outDir": "./dist",
     "strict": true,
-    "composite": true
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
   },
   "include": [
     "src/",
     "index.ts"
   ],
-  "exclude": []
+  "exclude": [
+    "dist"
+  ]
 }
