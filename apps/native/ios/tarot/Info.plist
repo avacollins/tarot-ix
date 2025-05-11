@@ -30,6 +30,12 @@
           <string>com.simples.tarot</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.googleusercontent.apps.1091028092780-cj8gcns7ikfoifp4tkhuck9eenc942hm</string>
+        </array>
+      </dict>
     </array>
     <key>CFBundleVersion</key>
     <string>1</string>

@@ -1,11 +1,12 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
-import typescriptEslint from '@typescript-eslint/eslint-plugin';
-import globals from 'globals';
-import tsParser from '@typescript-eslint/parser';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-import js from '@eslint/js';
+
 import { FlatCompat } from '@eslint/eslintrc';
+import { fileURLToPath } from 'node:url';
+import globals from 'globals';
+import js from '@eslint/js';
+import path from 'node:path';
+import tsParser from '@typescript-eslint/parser';
+import typescriptEslint from '@typescript-eslint/eslint-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -151,10 +152,8 @@ export default defineConfig([
             'no-underscore-dangle': 0,
             'no-unreachable': 2,
 
-            'no-unused-vars': [2, {
-                vars: 'local',
-                args: 'after-used'
-            }],
+            'no-unused-vars': "off",
+            '@typescript-eslint/no-unused-vars': 'warn',
 
             'no-use-before-define': 'off',
             '@typescript-eslint/no-use-before-define': ['error'],
