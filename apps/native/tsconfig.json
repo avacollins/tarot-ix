@@ -10,7 +10,7 @@
   },
   "include": [
     "src/**/*",
-    "index.ts"
+    "index.tsx"
   ],
   "exclude": [
     "dist"

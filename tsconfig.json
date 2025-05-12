@@ -18,6 +18,9 @@
     "noUnusedLocals": true,
     "strictNullChecks": true,
     "paths": {
+      "app/*": [
+        "packages/app/src/*"
+      ],
       "ui/*": [
         "packages/ui/src/*"
       ],

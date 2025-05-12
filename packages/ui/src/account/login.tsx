@@ -1,4 +1,4 @@
-import { Colors, EmailPassword } from 'ui';
+import { Colors, EmailPassword } from '../../index';
 import { StyleSheet, View } from 'react-native';
 
 import { Button } from '@rneui/themed';
