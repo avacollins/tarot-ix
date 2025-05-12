@@ -11,9 +11,9 @@ export { default as Start } from './src/reading/screens/start';
 export { default as Account } from './src/account/screens/account';
 export { default as ForgotPassword } from './src/account/forgot-password';
 export { default as ShuffleDeal } from './src/reading/screens/shuffle-deal';
-// export { default as Deal } from './src/cards/deal';
+export { default as ReadingCarousel } from './src/reading/carousel/reading-carousel';
+export { default as Deal } from './src/reading/deal';
 /* export { default as Deck } from './src/cards/deck';
-export { default as ReadingCarousel } from './src/cards/carousel/reading-carousel';
 export { default as ShuffleAnimation } from './src/cards/shuffle'; */
 // hooks
 export { default as useInstructions } from './src/hooks/use-instructions';

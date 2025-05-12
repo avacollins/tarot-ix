@@ -39,7 +39,7 @@ export default function Deal({ reading, dealt = false, onPress }: DealProps) {
                         cardIndex={card?.index}
                         spreadIndex={index}
                         reversed={card.reversed}
-                        onPress={castEnergyToDeck}
+                        onPress={() => castEnergyToDeck(index)}
                         dealt={dealDone}
                     />
                 ))}
