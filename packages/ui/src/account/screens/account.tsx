@@ -71,7 +71,7 @@ export default Account;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        height: height,
+        height: height - 100,
         alignItems: 'center',
         marginHorizontal: 40
     },
@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'flex-end',
         justifyContent: 'center',
-        marginVertical: 150
+        marginVertical: 100
     },
     logoutButton: {
         alignSelf: 'stretch',

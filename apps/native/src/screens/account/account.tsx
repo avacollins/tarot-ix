@@ -1,6 +1,7 @@
 import { Account, Background } from 'ui';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
+import QuickNav from 'src/navigation/quickNav';
 import { ROUTES } from '../../navigation/config';
 import React from 'react';
 import crashlytics from '@react-native-firebase/crashlytics';
@@ -28,15 +29,18 @@ const AccountScreen = () => {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
-            <Background>
-                <Account
-                    username={user?.email || ''}
-                    resetPassword={resetPassword}
-                    logout={logout}
-                />
-            </Background>
-        </SafeAreaView>
+        <>
+            <SafeAreaView style={styles.container}>
+                <Background>
+                    <Account
+                        username={user?.email || ''}
+                        resetPassword={resetPassword}
+                        logout={logout}
+                    />
+                </Background>
+            </SafeAreaView>
+            <QuickNav />
+        </>
     );
 };
 

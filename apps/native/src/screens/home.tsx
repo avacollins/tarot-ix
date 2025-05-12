@@ -1,6 +1,7 @@
 import { Dimensions, Image, SafeAreaView, StyleSheet } from 'react-native';
 
 import { Background } from 'ui';
+import QuickNav from 'src/navigation/quickNav';
 import React from 'react';
 
 const { height: screenHeight } = Dimensions.get('window');
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
 });
 
 const HomeScreen = () => (
+    <>
         <SafeAreaView style={styles.container}>
             <Background>
                 <Image
@@ -24,7 +26,8 @@ const HomeScreen = () => (
                 />
             </Background>
         </SafeAreaView>
-    );
+        <QuickNav />
+    </>
+);
 
 export default HomeScreen;
-
