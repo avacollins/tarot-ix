@@ -7,7 +7,7 @@ import { useAuth } from '../../hooks';
 import { useRouter } from 'solito/router';
 
 const LoginScreen = () => {
-    const { error, loginWithEmailAndPassword } = useAuth();
+    const { error, loginWithEmailAndPassword, loginAnonymously } = useAuth();
 
     const { push } = useRouter();
 
@@ -26,6 +26,7 @@ const LoginScreen = () => {
                 signup={register}
                 error={error}
                 resetPassword={resetPassword}
+                loginAnon={loginAnonymously}
             />
         </SafeAreaView>
     );
