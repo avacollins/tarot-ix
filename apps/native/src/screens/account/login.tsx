@@ -1,5 +1,6 @@
 import { SafeAreaView, Text } from 'react-native';
 
+import { Login } from 'app';
 import React from 'react';
 
 const LoginScreen = () => (

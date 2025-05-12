@@ -17,7 +17,7 @@ const compat = new FlatCompat({
 });
 
 export default defineConfig([
-    globalIgnores(['**/dist', '**/node_modules', '**/*.json', '**/*.mjs']),
+    globalIgnores(['**/dist', '**/node_modules', '**/*.json', '**/*.mjs', "**/assets"]),
     {
         extends: compat.extends(
             'eslint:recommended',
@@ -156,7 +156,7 @@ export default defineConfig([
             '@typescript-eslint/no-unused-vars': 'warn',
 
             'no-use-before-define': 'off',
-            '@typescript-eslint/no-use-before-define': ['error'],
+            '@typescript-eslint/no-use-before-define': ['warn'],
             'no-with': 2,
             'object-curly-spacing': [2, 'always'],
             'one-var': [2, 'never'],

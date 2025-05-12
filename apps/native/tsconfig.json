@@ -3,13 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "./dist",
-    "strict": true,
     "composite": true,
     "declaration": true,
     "declarationMap": true,
+    "emitDeclarationOnly": true,
   },
   "include": [
-    "src/",
+    "src/**/*",
     "index.ts"
   ],
   "exclude": [

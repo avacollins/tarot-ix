@@ -1,0 +1,11 @@
+{
+  "main": "index.tsx",
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "types": "dist/index.d.ts",
+  "scripts": {},
+  "dependencies": {
+    "ui": "*"
+  }
+}

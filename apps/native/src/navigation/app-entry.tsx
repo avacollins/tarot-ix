@@ -5,7 +5,7 @@ import { PATHS, ROUTES } from './config';
 import React, { useEffect, useState } from 'react';
 
 import HomeScreen from '../screens/home';
-import LoginScreen from 'src/screens/account/login';
+import LoginScreen from '../screens/account/login';
 import colors from 'ui/src/theme/colors';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useAuth } from '../hooks';
