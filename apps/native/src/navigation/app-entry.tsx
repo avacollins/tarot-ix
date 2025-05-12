@@ -4,8 +4,12 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { PATHS, ROUTES } from './config';
 import React, { useEffect, useState } from 'react';
 
+import AccountScreen from 'src/screens/account/account';
+import ForgotPasswordScreen from '../screens/account/forgot-password';
 import HomeScreen from '../screens/home';
 import LoginScreen from '../screens/account/login';
+import PasswordReset from 'src/screens/account/password-reset';
+import SignupScreen from 'src/screens/account/signup';
 import colors from 'ui/src/theme/colors';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useAuth } from '../hooks';
@@ -46,6 +50,10 @@ const AppEntry = () => {
                                 component={HomeScreen}
                                 name={ROUTES.screens.HOME.name}
                             />
+                            <Stack.Screen
+                                component={AccountScreen}
+                                name={ROUTES.screens.ACCOUNT.name}
+                            />
                         </Stack.Group>
                     </>
                 ) : (
@@ -54,6 +62,28 @@ const AppEntry = () => {
                             <Stack.Screen
                                 component={LoginScreen}
                                 name={ROUTES.screens.LOGIN.name}
+                            />
+                        </Stack.Group>
+                        <Stack.Group
+                            screenOptions={{
+                                headerTitle: '',
+                                headerBackTitle: '',
+                                headerTintColor: colors.smoky_black.base,
+                                headerStyle: { backgroundColor: colors.silver_sand.base },
+                                headerShadowVisible: false
+                            }}>
+                            <Stack.Screen
+                                component={SignupScreen}
+                                name={ROUTES.screens.SIGNUP.name}
+                            />
+                            <Stack.Screen
+                                component={ForgotPasswordScreen}
+                                name={ROUTES.screens.FORGOT_PASSWORD.name}
+                            />
+                            <Stack.Screen
+                                component={PasswordReset}
+                                name={ROUTES.screens.PASSWORD_RESET.name}
+                                options={{ headerShown: false }}
                             />
                         </Stack.Group>
                     </>

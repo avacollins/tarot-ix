@@ -6,9 +6,11 @@ export { default as Background } from './src/theme/background';
 export { default as Colors } from './src/theme/colors';
 export { default as EmailPassword } from './src/account/email-password';
 export { default as Login } from './src/account/screens/login';
+export { default as Signup } from './src/account/screens/signup';
+export { default as Account } from './src/account/screens/account';
+export { default as ForgotPassword } from './src/account/forgot-password';
 // export { default as Deal } from './src/cards/deal';
 /* export { default as Deck } from './src/cards/deck';
-export { default as ForgotPassword } from './src/account/forgot-password';
 export { default as ReadingCarousel } from './src/cards/carousel/reading-carousel';
 export { default as ShuffleAnimation } from './src/cards/shuffle'; */
 // hooks
