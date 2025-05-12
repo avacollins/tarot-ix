@@ -4,13 +4,14 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { PATHS, ROUTES } from './config';
 import React, { useEffect, useState } from 'react';
 
-import AccountScreen from 'src/screens/account/account';
+import AccountScreen from '../screens/account/account';
 import ForgotPasswordScreen from '../screens/account/forgot-password';
 import HomeScreen from '../screens/home';
 import LoginScreen from '../screens/account/login';
-import NewReading from 'src/screens/readings/new';
-import PasswordReset from 'src/screens/account/password-reset';
-import SignupScreen from 'src/screens/account/signup';
+import NewReading from '../screens/readings/new';
+import PasswordReset from '../screens/account/password-reset';
+import ShuffleDealScreen from '../screens/readings/shuffle';
+import SignupScreen from '../screens/account/signup';
 import colors from 'ui/src/theme/colors';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useAuth } from '../hooks';
@@ -58,6 +59,26 @@ const AppEntry = () => {
                             <Stack.Screen
                                 component={NewReading}
                                 name={ROUTES.screens.NEW_READING.name}
+                            />
+                        </Stack.Group>
+                        <Stack.Group
+                            screenOptions={{
+                                headerTitle: '',
+                                headerBackTitle: '',
+                                headerTintColor: colors.smoky_black.base,
+                                headerStyle: {
+                                    backgroundColor: colors.silver_sand.base
+                                },
+                                headerTitleAlign: 'center',
+                                headerTitleStyle: {
+                                    fontWeight: 'bold',
+                                    fontSize: 36
+                                },
+                                headerShadowVisible: false
+                            }}>
+                            <Stack.Screen
+                                component={ShuffleDealScreen}
+                                name={ROUTES.screens.SHUFFLE_DEAL.name}
                             />
                         </Stack.Group>
                     </>

@@ -11,7 +11,8 @@
   },
   "include": [
     "src/**/*",
-    "index.tsx"
+    "index.tsx",
+    "types/**/*"
   ],
   "exclude": [
     "node_modules",
