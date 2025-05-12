@@ -7,6 +7,7 @@ export { default as Colors } from './src/theme/colors';
 export { default as EmailPassword } from './src/account/email-password';
 export { default as Login } from './src/account/screens/login';
 export { default as Signup } from './src/account/screens/signup';
+export { default as Start } from './src/reading/screens/start';
 export { default as Account } from './src/account/screens/account';
 export { default as ForgotPassword } from './src/account/forgot-password';
 // export { default as Deal } from './src/cards/deal';

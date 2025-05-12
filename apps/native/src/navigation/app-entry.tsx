@@ -8,6 +8,7 @@ import AccountScreen from 'src/screens/account/account';
 import ForgotPasswordScreen from '../screens/account/forgot-password';
 import HomeScreen from '../screens/home';
 import LoginScreen from '../screens/account/login';
+import NewReading from 'src/screens/readings/new';
 import PasswordReset from 'src/screens/account/password-reset';
 import SignupScreen from 'src/screens/account/signup';
 import colors from 'ui/src/theme/colors';
@@ -53,6 +54,10 @@ const AppEntry = () => {
                             <Stack.Screen
                                 component={AccountScreen}
                                 name={ROUTES.screens.ACCOUNT.name}
+                            />
+                            <Stack.Screen
+                                component={NewReading}
+                                name={ROUTES.screens.NEW_READING.name}
                             />
                         </Stack.Group>
                     </>

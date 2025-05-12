@@ -1,7 +1,8 @@
-import { Colors, EmailPassword } from '../../../index';
 import { StyleSheet, View } from 'react-native';
 
 import { Button } from '@rneui/themed';
+import { default as Colors } from '../../theme/colors';
+import EmailPassword from '../email-password';
 import React from 'react';
 
 type LoginProps = {

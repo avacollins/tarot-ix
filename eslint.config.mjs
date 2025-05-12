@@ -154,6 +154,7 @@ export default defineConfig([
 
             'no-unused-vars': "off",
             '@typescript-eslint/no-unused-vars': 'warn',
+            '@typescript-eslint/no-require-imports': 'off',
 
             'no-use-before-define': 'off',
             '@typescript-eslint/no-use-before-define': ['warn'],
@@ -212,7 +213,7 @@ export default defineConfig([
             'react/display-name': 2,
             'react/forbid-prop-types': 1,
             'react/jsx-boolean-value': [2, 'always'],
-            'react/jsx-closing-bracket-location': 2,
+            'react/jsx-closing-bracket-location': 0,
             'react/jsx-curly-spacing': [2, 'never'],
             'react/jsx-equals-spacing': 2,
             'react/jsx-indent': 0,
