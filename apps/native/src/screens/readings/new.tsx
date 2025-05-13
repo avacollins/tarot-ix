@@ -14,10 +14,12 @@ const NewReading = () => {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
-            <Start onStart={onStart} />
+        <>
+            <SafeAreaView style={styles.container}>
+                <Start onStart={onStart} />
+            </SafeAreaView>
             <QuickNav />
-        </SafeAreaView>
+        </>
     );
 };
 
