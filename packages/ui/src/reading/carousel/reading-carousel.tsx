@@ -36,7 +36,6 @@ const ReadingCarousel = ({
 
     useEffect(() => {
         const index = startFromIndex;
-        console.log(startFromIndex);
         setTimeout(() => {
             selectCard(index);
         }, 500);

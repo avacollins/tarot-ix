@@ -27,17 +27,19 @@ const ReadingDetailScreen = ({ navigation, route }) => {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
-            <Background>
-                <ReadingCarousel
-                    data={jsonData}
-                    startFromIndex={index}
-                    width={width}
-                    navigationEvent={carouselNavEvent}
-                />
-            </Background>
+        <>
+            <SafeAreaView style={styles.container}>
+                <Background>
+                    <ReadingCarousel
+                        data={jsonData}
+                        startFromIndex={index}
+                        width={width}
+                        navigationEvent={carouselNavEvent}
+                    />
+                </Background>
+            </SafeAreaView>
             <QuickNav navigationEvent={quickNavEvent} />
-        </SafeAreaView>
+        </>
     );
 };
 

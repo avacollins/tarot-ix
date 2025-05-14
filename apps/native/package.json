@@ -29,6 +29,7 @@
     "react-dom": "19.0.0",
     "react-native": "^0.79.2",
     "react-native-expo-viewport-units": "^0.0.8",
+    "react-native-just-timeline": "^0.0.2",
     "react-native-reanimated": "^3.17.5",
     "react-native-safe-area-context": "^5.4.0",
     "react-native-screens": "^4.10.0",
@@ -43,6 +44,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~19.0.10",
+    "reactotron-react-native": "^5.1.13",
     "typescript": "~5.8.3"
   }
 }

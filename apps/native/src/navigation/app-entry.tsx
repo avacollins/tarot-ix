@@ -6,6 +6,7 @@ import React, { useEffect, useState } from 'react';
 
 import AccountScreen from '../screens/account/account';
 import ForgotPasswordScreen from '../screens/account/forgot-password';
+import HistoryScreen from 'src/screens/readings/history';
 import HomeScreen from '../screens/home';
 import LoginScreen from '../screens/account/login';
 import NewReading from '../screens/readings/new';
@@ -62,6 +63,10 @@ const AppEntry = () => {
                                 component={NewReading}
                                 name={ROUTES.screens.NEW_READING.name}
                             />
+                            <Stack.Screen
+                                component={HistoryScreen}
+                                name={ROUTES.screens.HISTORY.name}
+                            />
                         </Stack.Group>
                         <Stack.Group
                             screenOptions={{
@@ -84,11 +89,11 @@ const AppEntry = () => {
                             />
                             <Stack.Screen
                                 component={ReadingScreen}
-                                name={ROUTES.screens.SPREAD.name}
+                                name={ROUTES.screens.READING.name}
                             />
                             <Stack.Screen
                                 component={ReadingDetailScreen}
-                                name={ROUTES.screens.READING.name}
+                                name={ROUTES.screens.READING_DETAIL.name}
                             />
                         </Stack.Group>
                     </>

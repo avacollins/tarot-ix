@@ -65,15 +65,17 @@ const ShuffleDealScreen = ({ navigation }) => {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
-            <ShuffleDeal
-                getCards={getCards}
-                spread={spread}
-                addDealtReading={updateReadingDoc}
-                openReading={openReading}
-            />
+        <>
+            <SafeAreaView style={styles.container}>
+                <ShuffleDeal
+                    getCards={getCards}
+                    spread={spread}
+                    addDealtReading={updateReadingDoc}
+                    openReading={openReading}
+                />
+            </SafeAreaView>
             <QuickNav navigationEvent={quickNavEvent} />
-        </SafeAreaView>
+        </>
     );
 };
 

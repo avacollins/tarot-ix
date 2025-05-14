@@ -9,9 +9,9 @@ export const PATHS = {
     NEW_READING: '/new',
     PASSWORD_RESET: '/password-reset',
     READING: '/reading',
+    READING_DETAIL: '/reading-detail',
     SHUFFLE_DEAL: '/shuffle',
-    SIGNUP: '/signup',
-    SPREAD: '/spread'
+    SIGNUP: '/signup'
 };
 
 export const ROUTES = {
@@ -28,13 +28,13 @@ export const ROUTES = {
             path: PATHS['SHUFFLE_DEAL'],
             name: 'SHUFFLE_DEAL'
         },
-        SPREAD: {
-            path: PATHS['SPREAD'],
-            name: 'SPREAD'
-        },
         READING: {
             path: PATHS['READING'],
             name: 'READING'
+        },
+        READING_DETAIL: {
+            path: PATHS['READING_DETAIL'],
+            name: 'READING_DETAIL'
         },
         CARDS: {
             path: PATHS['CARDS'],

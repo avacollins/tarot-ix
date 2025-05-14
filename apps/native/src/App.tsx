@@ -1,8 +1,9 @@
 import { ThemeProvider, createTheme } from '@rneui/themed';
-import React from 'react';
-import { Colors as colors } from 'ui';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 import AppEntry from './navigation/app-entry';
+import React from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { Colors as colors } from 'ui';
 
 const theme = createTheme({
     lightColors: {
@@ -25,15 +26,17 @@ const theme = createTheme({
     }
 });
 
-
 export default function App() {
-  return (
-      <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
-       <AppEntry />
-        </SafeAreaProvider>
-    </ThemeProvider>
-  );
+    // eslint-disable-next-line no-undef
+    if (__DEV__) {
+        require('../ReactotronConfig');
+    }
+
+    return (
+        <ThemeProvider theme={theme}>
+            <SafeAreaProvider>
+                <AppEntry />
+            </SafeAreaProvider>
+        </ThemeProvider>
+    );
 }
-
-

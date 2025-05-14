@@ -13,9 +13,10 @@ const ReadingScreen = ({ navigation, route }) => {
     dealer(id);
 
     const { push } = useRouter();
+
     const openReadingDetail = spreadIndex => {
         push({
-            pathname: ROUTES.screens.READING.path,
+            pathname: ROUTES.screens.READING_DETAIL.path,
             query: {
                 reading: JSON.stringify(cardMeanings),
                 startFrom: spreadIndex
@@ -28,18 +29,20 @@ const ReadingScreen = ({ navigation, route }) => {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
-            <Background>
-                {cardMeanings && (
-                    <Deal
-                        reading={cardMeanings}
-                        dealt={true}
-                        onPress={openReadingDetail}
-                    />
-                )}
-            </Background>
+        <>
+            <SafeAreaView style={styles.container}>
+                <Background>
+                    {cardMeanings && (
+                        <Deal
+                            reading={cardMeanings}
+                            dealt={true}
+                            onPress={openReadingDetail}
+                        />
+                    )}
+                </Background>
+            </SafeAreaView>
             <QuickNav navigationEvent={quickNavEvent} />
-        </SafeAreaView>
+        </>
     );
 };
 
