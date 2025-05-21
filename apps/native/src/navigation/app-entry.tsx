@@ -13,7 +13,7 @@ import NewReading from '../screens/readings/new';
 import PasswordReset from '../screens/account/password-reset';
 import ReadingDetailScreen from '../screens/readings/reading-detail';
 import ReadingScreen from '../screens/readings/reading';
-import ShuffleDealScreen from '../screens/readings/shuffle';
+import ShuffleScreen from '../screens/readings/shuffle';
 import SignupScreen from '../screens/account/signup';
 import colors from 'ui/src/theme/colors';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -84,8 +84,8 @@ const AppEntry = () => {
                                 headerShadowVisible: false
                             }}>
                             <Stack.Screen
-                                component={ShuffleDealScreen}
-                                name={ROUTES.screens.SHUFFLE_DEAL.name}
+                                component={ShuffleScreen}
+                                name={ROUTES.screens.SHUFFLE.name}
                             />
                             <Stack.Screen
                                 component={ReadingScreen}

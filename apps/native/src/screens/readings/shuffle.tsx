@@ -44,9 +44,9 @@ const ShuffleDealScreen = ({ navigation }) => {
     const getCards = async (readingIndexes, reversals) =>
         fetchCardsInSpread(readingIndexes, reversals).then(c => c);
 
-    const updateReadingDoc = (reading, reversals) => {
+    const updateReadingDoc = async (reading, reversals) => {
         if (user?.uid && documentId && reading && reversals) {
-            updateReading(documentId, reading, reversals);
+            await updateReading(documentId, reading, reversals);
             dealer(documentId);
         }
     };
@@ -54,8 +54,8 @@ const ShuffleDealScreen = ({ navigation }) => {
     const openReading = (index: number) => {
         if (cardMeanings) {
             push({
-                pathname: ROUTES.screens.READING.path,
-                query: { reading: JSON.stringify(cardMeanings), startFrom: 0 }
+                pathname: ROUTES.screens.READING_DETAIL.path,
+                query: { reading: JSON.stringify(cardMeanings), startFrom: index }
             });
         }
     };

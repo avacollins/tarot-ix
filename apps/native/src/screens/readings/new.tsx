@@ -10,7 +10,7 @@ const NewReading = () => {
     const { push } = useRouter();
 
     const onStart = () => {
-        push({ pathname: ROUTES.screens.SHUFFLE_DEAL.path });
+        push({ pathname: ROUTES.screens.SHUFFLE.path });
     };
 
     return (

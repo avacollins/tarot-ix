@@ -1,4 +1,5 @@
 import firestore, {
+    addDoc,
     collection,
     doc,
     getDoc,
@@ -15,7 +16,6 @@ import { FirebaseAuthTypes } from '@react-native-firebase/auth';
 /* eslint-disable no-shadow */
 import { FirebaseFirestoreTypes } from '@react-native-firebase/firestore';
 import { ReadingProp } from 'ui/types';
-import uuid from 'react-native-uuid';
 
 type UseFirestore = {
     fetchDeck: () => Promise<FirebaseFirestoreTypes.DocumentData[]>;
@@ -102,26 +102,20 @@ const useFirestore = (): UseFirestore => {
     const generateReadingDocument = async userId => {
         if (!userId) return;
 
-        const documentId = uuid.v4().toString();
         const now = new Date();
 
         const document = {
-            id: documentId,
             userId: userId,
             reading: [],
             creationTime: now.toString()
         };
 
         const db = getFirestore();
-        const docRef = doc(db, COLLECTIONS.READING, documentId);
-        const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
-            await setDoc(docRef, document);
 
-            return documentId;
-        }
+        const collectionRef = collection(db, COLLECTIONS.READING);
+        const newDocRef = await addDoc(collectionRef, document);
 
-        return;
+        return newDocRef.id;
     };
 
     const fetchReadingById = async (id: string) => {

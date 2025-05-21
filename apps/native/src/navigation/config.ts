@@ -10,7 +10,7 @@ export const PATHS = {
     PASSWORD_RESET: '/password-reset',
     READING: '/reading',
     READING_DETAIL: '/reading-detail',
-    SHUFFLE_DEAL: '/shuffle',
+    SHUFFLE: '/shuffle',
     SIGNUP: '/signup'
 };
 
@@ -24,9 +24,9 @@ export const ROUTES = {
             path: PATHS['NEW_READING'],
             name: 'NEW_READING'
         },
-        SHUFFLE_DEAL: {
-            path: PATHS['SHUFFLE_DEAL'],
-            name: 'SHUFFLE_DEAL'
+        SHUFFLE: {
+            path: PATHS['SHUFFLE'],
+            name: 'SHUFFLE'
         },
         READING: {
             path: PATHS['READING'],
