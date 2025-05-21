@@ -1,9 +1,11 @@
 import { ThemeProvider, createTheme } from '@rneui/themed';
 
 import AppEntry from './navigation/app-entry';
+import { Provider } from 'react-redux';
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Colors as colors } from 'ui';
+import { store } from '../src/redux/store';
 
 const theme = createTheme({
     lightColors: {
@@ -33,10 +35,12 @@ export default function App() {
     }
 
     return (
-        <ThemeProvider theme={theme}>
-            <SafeAreaProvider>
-                <AppEntry />
-            </SafeAreaProvider>
-        </ThemeProvider>
+        <Provider store={store}>
+            <ThemeProvider theme={theme}>
+                <SafeAreaProvider>
+                    <AppEntry />
+                </SafeAreaProvider>
+            </ThemeProvider>
+        </Provider>
     );
 }

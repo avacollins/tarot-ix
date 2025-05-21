@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { useAuth, useFirestore } from '../../hooks';
 
-import { FirebaseFirestoreTypes } from '@react-native-firebase/firestore';
 import QuickNav from 'src/navigation/quickNav';
 import { ROUTES } from '../../navigation/config';
 import { ShuffleDeal } from 'ui';
@@ -10,22 +9,13 @@ import useDealer from '../../hooks/useDealer';
 import { useRouter } from 'solito/router';
 
 const ShuffleDealScreen = ({ navigation }) => {
-    const [spread, setSpread] = useState<FirebaseFirestoreTypes.DocumentData>();
     const [documentId, setDocumentId] = useState<string>();
     const { push } = useRouter();
-    const { dealer, cardMeanings } = useDealer();
+    const { dealer, cardMeanings, spread } = useDealer();
 
-    const { fetchCardsInSpread, fetchSpread, generateReadingDocument, updateReading } =
-        useFirestore();
+    const { fetchCardsInSpread, generateReadingDocument, updateReading } = useFirestore();
 
     const { user } = useAuth();
-
-    useEffect(() => {
-        const fetch = async () => {
-            fetchSpread().then((s: FirebaseFirestoreTypes.DocumentData) => setSpread(s));
-        };
-        fetch();
-    }, []);
 
     useEffect(() => {
         if (user?.uid) {

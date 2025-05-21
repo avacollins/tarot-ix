@@ -1,7 +1,10 @@
+import { AppDispatch, RootState } from 'src/redux/store';
+import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
 import { FirebaseFirestoreTypes } from '@react-native-firebase/firestore';
 import { ReadingProp } from 'ui/types';
+import { fetchSpreads } from 'src/redux/spreadSlice';
 import useFirestore from './firebase/use-firestore';
 import { useReading } from 'ui';
 
@@ -10,16 +13,21 @@ const useDealer = () => {
     const [cards, setCards] = useState<ReadingProp[]>();
     const [cardMeanings, setCardMeanings] = useState();
     const [isLoading, setIsLoading] = useState(false);
+    const dispatch = useDispatch<AppDispatch>();
+    const { value: spreads } = useSelector((state: RootState) => state.spreads);
 
-    const { fetchReadingById, fetchSpread, fetchCardsInSpread } = useFirestore();
+    const { fetchReadingById, fetchCardsInSpread } = useFirestore();
     const { deal } = useReading();
 
     useEffect(() => {
-        const fetch = async () => {
-            fetchSpread().then((s: FirebaseFirestoreTypes.DocumentData) => setSpread(s));
-        };
-        fetch();
-    }, []);
+        dispatch(fetchSpreads());
+    }, [dispatch]);
+
+    useEffect(() => {
+        if (spreads) {
+            setSpread(spreads[0]);
+        }
+    }, [spreads]);
 
     useEffect(() => {
         if (cards) {
@@ -50,6 +58,7 @@ const useDealer = () => {
 
     return {
         cardMeanings,
+        spread,
         dealer
     };
 };
